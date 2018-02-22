@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Image Scale Transform</title>
+  <style>
+    img.scale {
+      transition-property: transform;
+      transition-duration: 1s;
+    }
+
+    img.scale:hover {
+      transform: scale(1.2, 1.2);
+    }
+
+    .frame {
+      width: 320px;
+      height: 240px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="frame">
+    <a href="https://www.nyu.edu">
+    <img class="scale" src="crosswalk.png" width="320" height="240">
+  </a>
+  </div>
+</body>
+
+</html>
